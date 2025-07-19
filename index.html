@@ -1,23 +1,64 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Site Azure</title>
-
+    <title>Site Azure - Trabalho de Fábrica de Software</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <h1>Olá, Azure Static Web Apps!</h1>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Quem fez isso?</a></li>
+          <li><a href="#contato">Mande jobs</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <button onclick="mostrarMensagem()">Clique aqui</button>
+    <main>
+      <section id="inicio">
+        <h1>⚠️ Alerta de código! ⚠️</h1>
+        <p>
+          Fala Yuri! Estou aqui às <strong>16:08 da tarde</strong> (horário de
+          Brasília e da paciência) fazendo o seu trabalho enquanto o cimento do
+          muro ainda tá secando! 😂
+        </p>
+        <h2>Assinado: Lucas Fernando Arantes – pedreiro meio programador 🧱💻</h2>
+      </section>
 
-    <p id="mensagem"></p>
+      <section id="interacao">
+        <h3>Interaja com tecnologia de ponta:</h3>
+        <button onclick="mostrarMensagem()">Clique aqui se você for curioso</button>
+        <p id="mensagem"></p>
+      </section>
 
-    <script src="script.js"></script>
+      <section id="sobre">
+        <h3>Sobre o desenvolvedor (eu mesmo)</h3>
+        <p>
+          Programador em tempo parcial, operário em tempo integral, e comediante nas horas vagas.
+          Este site foi desenvolvido com muito carinho, suor e talvez um pouco de areia na tecla "A".
+        </p>
+      </section>
+
+      <section id="contato">
+        <h3>Contato Profissional (ou não)</h3>
+        <p>Email: lucas@fakemail.com.br</p>
+        <p>WhatsApp: (99) 99999-9999 (respondo se não estiver misturando argamassa)</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Lucas Fernando Arantes. Direitos meio reservados. Pode copiar, mas dá os créditos, né?</p>
+    </footer>
+
+    <script>
+      function mostrarMensagem() {
+        const mensagem = document.getElementById("mensagem");
+        mensagem.innerText = "Parabéns! Você clicou no botão mais inútil da internet 🎉";
+      }
+    </script>
   </body>
 </html>

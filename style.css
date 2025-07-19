@@ -1,17 +1,80 @@
 body {
-  font-family: sans-serif;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #fef6e4;
+  margin: 0;
+  padding: 0;
+  color: #001858;
+}
 
+header {
+  background-color: #f582ae;
+  padding: 1rem;
   text-align: center;
+}
 
-  margin-top: 50px;
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
 
-  background-color: #f0f0f0;
+nav a {
+  text-decoration: none;
+  color: #001858;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  border: 2px dashed #f582ae;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+h1 {
+  color: #f55;
+  text-align: center;
+}
+
+h2, h3 {
+  color: #f582ae;
 }
 
 button {
+  background-color: #8bd3dd;
+  border: none;
   padding: 10px 20px;
-
+  border-radius: 10px;
   font-size: 16px;
-
   cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #f582ae;
+  color: white;
+}
+
+#mensagem {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #3a0ca3;
+}
+
+footer {
+  background-color: #f582ae;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #fff;
+  position: sticky;
+  bottom: 0;
 }
